@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+// Questão 1) Quais serão os valores de x, y e p ao final do trecho 
+de codigo abaixo
+int main() {
+    int x, y, *p;
+    y = 0;
+    p = &y;
+    x = *p; 
+    x = 4;   
+    (*p)++;  
+    --x;     
+    (*p) += x;  
+}
+// Y será 4, inicialmente y é 0 e está associado ao conteudo do ponteiro no seu endereço. Como y = p logo resultará em 4
+//*p inicialmente é igual a y = 0, logo após com o incremento e depois (*p) += x resultará em 4.
+// x será 3, pois sofreu incremento em --x;
