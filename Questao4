@@ -1,0 +1,23 @@
+#include <Stdio.h>
+#include <math.h>
+//Questão 4) Crie um programa para calcular a área e o perímetro de um hexágono. O seu
+//programa deve implementar uma função chamada calcula_hexagono que calcula a área e o
+//perímetro de um hexágono regular de lado l. A função deve obedecer ao seguinte protótipo:
+//void calcula_hexagono(float l, float *area, float *perimetro); A área e o perímetro de um
+//hexágono regular são dados, respectivamente, por:
+
+void calcula_hexagono(float l, float *area, float *perimetro){
+(*area) = (3 pow(l,2)*sqrt(3))l/2;
+(*perimetro) = 6*l;
+}
+
+int main(){
+printf("Insira o lado do hexagono");
+float l;
+float area = 0;
+float perimetro = 0;
+scanf("%f", &l);
+calcular_hexagono(l,&area,&perimetro);
+printf("Area: %.2f\nPerimetro:%.2f", area,perimetro);
+return0;
+}
